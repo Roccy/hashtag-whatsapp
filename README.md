@@ -1,2 +1,2 @@
-# -whatsapp
-Hashtag navigation for WhatsApp web
+# #whatsapp
+Hashtag navigation for WhatsApp web.
