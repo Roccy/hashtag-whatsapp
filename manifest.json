@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "#whatsapp",
+    "description": "Hashtag support for WhatsApp Web",
+    "version": "1.0",
+
+    "background": {
+        "persistent": false,
+        "scripts": ["background.js"]
+    },
+    
+    "content_scripts": [{
+        "matches": ["https://web.whatsapp.com/"],
+        "js": [
+            "jquery-2.1.4.min.js",
+            "content.js"
+        ]
+    }],
+    
+    "browser_action": {
+        "default_title": "#whatsapp",
+        "default_icon": "icon.png"
+    },
+
+    "permissions": [
+        "activeTab",
+        "storage"
+    ]
+}
